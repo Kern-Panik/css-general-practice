@@ -1,0 +1,96 @@
+.premium {
+    width: min(100%, 1336px);
+    padding: 0 calc(var(--container-padding-x) - 60px);
+    border-radius: 10px;
+    background-color: var(--blue-accent);
+    &__container {
+        padding: 60px 0px;
+    }
+    &__headline {
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__content {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    &__card {
+        &:last-of-type {
+            grid-area: 2 / 2 / 4 / 2;
+        }
+        &-logo {
+            width: min(5vw, 88px);
+            height: min(5vw, 80px);
+            &--epil {
+                width: min(100%, 360px);
+                height: min(100%, 191px);
+                margin: 0 auto;
+            }
+        }
+        &-container {
+            width: 100%;
+            justify-content: space-between;
+            align-items: flex-start;
+            &--epil {
+                margin-top: 16px;
+            }
+        }
+        &-rating {
+            &-quantity {
+                color:#515674;
+            }
+        }
+        &-head {
+            align-items: flex-start;
+            position: relative;
+            margin-bottom: 24px;
+            column-gap: 8px;
+        }
+        &-text {
+            position: relative;
+            top: 9.5px;
+            row-gap: 16px;
+            &--epil {
+                top: 0;
+            }
+        }
+        &-headline {
+            font-size: min(calc(var(--text-shrink) + 0.2vw), 20px);
+        }
+        &-address {
+            column-gap: 4px;
+            &-icon {
+                width: 20px;
+                height: 20px;
+            }
+            &-text {
+                font-size: min(var(--text-shrink), 16px);
+                font-weight: 500;
+            }
+        }
+        &-foot {
+            justify-content: space-between;
+            align-items: center;
+            padding: 4px;
+        }
+        &-rating {
+            position: relative;
+            align-items: center;
+            column-gap: 4px;
+            &-quality {
+                position: inherit;
+                top: 1px;
+            }
+        }
+    }
+    &__button {
+        text-align: center;
+        &-box {
+            width: 257px;
+            height: 48px;
+        }
+    }
+}

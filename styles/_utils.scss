@@ -1,0 +1,76 @@
+.container {
+    max-width: var(--container-width);
+    padding: 0 var(--container-padding-x);
+    margin: 0 auto var(--container-margin-y);
+}
+
+.block-margin {
+    margin-top: var(--card-block-margin);
+}
+
+.content-card {
+    width: 100%;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-original {
+    display: grid;
+    grid-template: 1fr 1fr / repeat(3, 1fr);
+    gap: 20px;
+}
+
+.btn-orange {
+    padding: 14px 0;
+    border: none;
+    border-radius: var(--border-radius-regular);
+    background-color: var(--orange-regular);
+    color: #FFF;
+    transition: transform var(--transition-duration) ease, position var(--transition-duration) ease;
+    &:hover {
+        transform: scale(1.05);
+    }
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+}
+
+.btn-transparent {
+    border: 1px solid var(--orange-regular);
+    border-radius: 40px;
+    background-color: transparent;
+    color: var(--orange-regular);
+}
+
+.btn-scroll-left {
+    background-image: url(../assets/icons/scroll-left.svg);
+    @include button-scroll;
+    background-color: var(--orange-accent);
+}
+
+.btn-scroll-right {
+    background-image: url(../assets/icons/scroll-right.svg);
+    @include button-scroll;
+    background-color: var(--orange-regular);
+}
+
+.link-card {
+    font-weight: 600;
+    color: var(--orange-regular);
+}

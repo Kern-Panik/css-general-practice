@@ -1,0 +1,85 @@
+.booking {
+
+    &__head {
+        height: 49px;
+        justify-content: space-between;
+        align-items: flex-start;
+        &-strong {
+            color: #515674;
+        }
+    }
+    &__search {
+        width: min(21vw, 408px);
+        padding: 12px 24px;
+        border: 1px solid #e8e8e8;
+        border-radius: 68px;
+        gap: 8px;
+        &-field {
+            width: min(15vw, 330px);
+            font-size: min(10vw, 16px);
+            border: none;
+            &:focus {
+                outline: none;
+            }
+            &::placeholder {
+                font-weight: 400;
+            }
+        }
+    }
+    &__categories {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+        gap: 20px;
+        &-button {
+            background-color: var(--orange-regular);
+            border: none;
+            border-radius: 10px;
+            width: 186px;
+            min-height: 145px;
+            &--transparent{
+                background-color: var(--orange-transparent);
+            }
+            &--blue {
+                background-color: var(--blue-accent);
+            }
+        }
+        &-text {
+            font-size: 24px;
+            font-weight: 500;
+            color: var(--blue-text);
+            &--white {
+                color: #fff;
+            }
+        }
+    }
+
+    &__choice {
+        padding: 24px;
+        &-line {
+            margin-right: auto;
+            font-size: 32px;
+        }
+        &-list {
+            flex-wrap: wrap;
+            justify-content: center;
+            flex: 1 1;
+            gap: 8px;
+        } 
+        &-link {
+            display: inline-block;
+            width: 150px;
+            padding: 10px 0;
+            text-align: center;
+            color: #515674;
+            background-color: var(--blue-accent);
+            border-radius: 40px;
+            &--orange {
+                background-color: var(--orange-regular);
+                color: #fff;
+            }
+        }
+    }
+}

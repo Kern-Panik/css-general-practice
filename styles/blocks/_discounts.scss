@@ -1,0 +1,96 @@
+.discounts {
+    &__headline {
+        text-align: center;
+    }
+
+    &__card {
+        height: 422px;
+        box-shadow: 0 4px 10px 0 rgba(106, 99, 118, 0.1);
+        &-head {
+            justify-content: space-between;
+            width: min(100%, 360px);
+            height: min(100%, 250px);
+            margin:  0 auto 16px;
+            padding: 16px;
+            border-radius: 10px;
+            background-image: url(../../assets/img/discounts/head-img.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-y: bottom;
+            overflow: visible;
+            &-discount {
+                width: 58px;
+                padding: 10px;
+                font-size: 20px;
+                text-align: center;
+                border-radius: 4px;
+                color: #fff;
+                background-color: #F3164E;
+            }
+            &-info {
+                justify-content: space-between;
+                align-items: center;
+                font-weight: 500;
+                height: 36px;
+                font-size: 14px;
+            }
+            &-date {
+                padding: 9.5px 8px;
+                background-color: var(--blue-accent);
+                border-radius: 4px;
+            }
+            &-views {
+                position: relative;
+                align-items: center;
+                width: 55px;
+                height: 36px;
+                padding: 8px;
+                font-size: 14px;
+                column-gap: 5px;
+                border-radius: 4px;
+                background-color: var(--blue-accent);
+                
+            }
+            &-eye {
+                width: 20px;
+                height: 20px;
+            }
+            &-counts {
+                height: 75%;
+            }
+        }
+        &-service {
+            font-weight: 600;
+            font-size: min(var(--text-shrink), 20px);
+            margin-bottom: 24px;
+        }
+        &-company {
+            column-gap: 8px;
+            &-main {
+                gap: 8px;
+            }
+            &-name {
+                font-weight: 600;
+                font-size: min(var(--text-shrink), 18px);
+            }
+        }
+        &-location {
+            column-gap: 0.5px;
+            &-address {
+                font-size: min(var(--text-shrink), 16px);
+                font-weight: 500;
+            }
+            &-pin {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+    &__button {
+        text-align: center;
+        &-box {
+            width: 257px;
+            height: 48px;
+        }
+    }
+}

@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Moon</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container container flex-row">
+            <div class="header__logo">
+                <a href="" class="header__logo-link">
+                    <img src="assets/icons/logo.svg" alt="Логотип" class="header__logo-img">
+                </a>
+            </div>
+
+            <div class="header__menu flex-row">
+                <div class="header__info">
+                    <a href="" class="header__info-biz">Для бизнеса</a>
+                    <div class="header__info-group flex-row">
+                        <img class="header__info-flag" src="assets/icons/ru.svg" alt="">
+                        <select name="languages" class="header__info-lang">
+                            <option value="ru" class="header__info-langlist">Русский</option>
+                            <option value="tj" class="header__info-langlist">Тоҷикӣ</option>
+                            <option value="en" class="header__info-langlist">English</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="header__auth">
+                    <button class="header__auth-signin btn-orange">Регистрация</a>
+                    <button class="header__auth-login">Вход</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="booking container">
+            <div class="booking__head flex-row">
+                <h2 class="booking__head-line text-upper">Онлайн запись в городе <strong class="booking__head-strong">Душанбе</strong></h2>
+                <div class="booking__search flex-row">
+                    <img сlass="booking__search-icon" src="assets/icons/search.svg" alt="Поиск">
+                    <input class="booking__search-field" type="text" placeholder="Услуга, компания или специалист">
+                </div>
+            </div>
+            <div class="booking__categories block-margin">
+                <button class="booking__categories-button"><span class="booking__categories-text booking__categories-text--white">Красота</span></button>
+                <button class="booking__categories-button booking__categories-button--transparent"><span class="booking__categories-text">Здоровье</span></button>
+                <button class="booking__categories-button booking__categories-button--transparent"><span class="booking__categories-text">Спорт</span></button>
+                <button class="booking__categories-button booking__categories-button--transparent"><span class="booking__categories-text">Авто</span></button>
+                <button class="booking__categories-button booking__categories-button--transparent"><span class="booking__categories-text">Животные</span></button>
+                <button class="booking__categories-button booking__categories-button--blue"><span class="booking__categories-text">Ещё</span></button>
+            </div>
+            <div class="booking__choice flex-row">
+                <p class="booking__choice-line">Красота</p>
+                <nav class="booking__choice-navigation">
+                    <ul class="booking__choice-list flex-row">
+                        <li class="booking__choice-item"><a href="/" class="booking__choice-link booking__choice-link--orange">Подборка</a></li>
+                        <li class="booking__choice-item"><a href="/" class="booking__choice-link">Каталог</a></li>
+                        <li class="booking__choice-item"><a href="/" class="booking__choice-link">Акции</a></li>
+                        <li class="booking__choice-item"><a href="/" class="booking__choice-link">На карте</a></li>
+                        <li class="booking__choice-item"><a href="/" class="booking__choice-link">Избранное</a></li>
+                        <li class="booking__choice-item"><a href="/" class="booking__choice-link">Мои записи</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="categories container">
+            <div class="categories__head flex-row">
+                <h2 class="categories__head-line text-upper">Категории</h2>
+                <div class="categories__head-buttons">
+                    <button class="categories__head-btn btn-scroll-left"></button>
+                    <button class="categories__head-btn btn-scroll-right"></button>
+                </div>
+            </div>
+            <div class="categories__cards block-margin flex-row">
+               <a href="/" class="categories__cards-link"><img class="categories__cards-img" src="assets/img/categories/barber.png" alt="Парикмахерские услуги"></a>
+               <a href="/" class="categories__cards-link"><img class="categories__cards-img" src="assets/img/categories/nails.png" alt="Ногтевой сервис"></a>
+               <a href="/" class="categories__cards-link"><img class="categories__cards-img" src="assets/img/categories/teeths.png" alt="Стоматология"></a>
+            </div>
+        </section>
+        <section class="premium container">
+            <div class="premium__container">
+                <h2 class="premium__headline">Премиум</h2>
+                <div class="premium__content">
+                    <div class="premium__card content-card">
+                        <div class="premium__card-head flex-row">
+                            <img class="premium__card-logo" src="assets/img/premium/logo.png" alt="Логотип Burut">
+                            <div class="premium__card-container flex-row">
+                                <div class="premium__card-text flex-column">
+                                    <h3 class="premium__card-headline">Burut Barbershop</h3>
+                                    <div class="premium__card-address flex-row">
+                                        <img class="premium__card-address-icon" src="assets/icons/pin.svg" alt="">
+                                        <p class="premium__card-address-text">Садриддина Айни 21/17</p>
+                                    </div>
+                                </div>
+                                <img class="premium__card-favourite" src="assets/icons/heart.svg" alt="Понравившееся">
+                            </div>
+                        </div>
+                        <div class="premium__card-foot flex-row">
+                            <div class="premium__card-rating flex-row">
+                                <img class="premium__card-rating-icon" src="assets/icons/star.svg" alt="Оценить">
+                                <p class="premium__card-rating-quality">5.0 <span class="premium__card-rating-quantity">(55)</span></p>
+                            </div>
+                            <a href="/" class="premium__card-signup link-card">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="premium__card content-card">
+                        <div class="premium__card-head flex-row">
+                            <img class="premium__card-logo" src="assets/img/premium/logo.png" alt="Логотип Burut">
+                            <div class="premium__card-container flex-row">
+                                <div class="premium__card-text flex-column">
+                                    <h3 class="premium__card-headline">Burut Barbershop</h3>
+                                    <div class="premium__card-address flex-row">
+                                        <img class="premium__card-address-icon" src="assets/icons/pin.svg" alt="">
+                                        <p class="premium__card-address-text">Садриддина Айни 21/17</p>
+                                    </div>
+                                </div>
+                                <img class="premium__card-favourite" src="assets/icons/heart.svg" alt="Понравившееся">
+                            </div>
+                        </div>
+                        <div class="premium__card-foot flex-row">
+                            <div class="premium__card-rating flex-row">
+                                <img class="premium__card-rating-icon" src="assets/icons/star.svg" alt="Оценить">
+                                <p class="premium__card-rating-quality">5.0 <span class="premium__card-rating-quantity">(55)</span></p>
+                            </div>
+                            <a href="/" class="premium__card-signup link-card">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="premium__card content-card">
+                        <div class="premium__card-head flex-row">
+                            <img class="premium__card-logo" src="assets/img/premium/logo.png" alt="Логотип Burut">
+                            <div class="premium__card-container flex-row">
+                                <div class="premium__card-text flex-column">
+                                    <h3 class="premium__card-headline">Burut Barbershop</h3>
+                                    <div class="premium__card-address flex-row">
+                                        <img class="premium__card-address-icon" src="assets/icons/pin.svg" alt="">
+                                        <p class="premium__card-address-text">Садриддина Айни 21/17</p>
+                                    </div>
+                                </div>
+                                <img class="premium__card-favourite" src="assets/icons/heart.svg" alt="Понравившееся">
+                            </div>
+                        </div>
+                        <div class="premium__card-foot flex-row">
+                            <div class="premium__card-rating flex-row">
+                                <img class="premium__card-rating-icon" src="assets/icons/star.svg" alt="Оценить">
+                                <p class="premium__card-rating-quality">5.0 <span class="premium__card-rating-quantity">(55)</span></p>
+                            </div>
+                            <a href="/" class="premium__card-signup link-card">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="premium__card content-card">
+                        <div class="premium__card-head flex-row">
+                            <img class="premium__card-logo" src="assets/img/premium/logo.png" alt="Логотип Burut">
+                            <div class="premium__card-container flex-row">
+                                <div class="premium__card-text flex-column">
+                                    <h3 class="premium__card-headline">Burut Barbershop</h3>
+                                    <div class="premium__card-address flex-row">
+                                        <img class="premium__card-address-icon" src="assets/icons/pin.svg" alt="">
+                                        <p class="premium__card-address-text">Садриддина Айни 21/17</p>
+                                    </div>
+                                </div>
+                                <img class="premium__card-favourite" src="assets/icons/heart.svg" alt="Понравившееся">
+                            </div>
+                        </div>
+                        <div class="premium__card-foot flex-row">
+                            <div class="premium__card-rating flex-row">
+                                <img class="premium__card-rating-icon" src="assets/icons/star.svg" alt="Оценить">
+                                <p class="premium__card-rating-quality">5.0 <span class="premium__card-rating-quantity">(55)</span></p>
+                            </div>
+                            <a href="/" class="premium__card-signup link-card">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="premium__card content-card">
+                        <div class="premium__card-head flex-row">
+                            <img class="premium__card-logo" src="assets/img/premium/logo.png" alt="Логотип Burut">
+                            <div class="premium__card-container flex-row">
+                                <div class="premium__card-text flex-column">
+                                    <h3 class="premium__card-headline">Burut Barbershop</h3>
+                                    <div class="premium__card-address flex-row">
+                                        <img class="premium__card-address-icon" src="assets/icons/pin.svg" alt="">
+                                        <p class="premium__card-address-text">Садриддина Айни 21/17</p>
+                                    </div>
+                                </div>
+                                <img class="premium__card-favourite" src="assets/icons/heart.svg" alt="Понравившееся">
+                            </div>
+                        </div>
+                        <div class="premium__card-foot flex-row">
+                            <div class="premium__card-rating flex-row">
+                                <img class="premium__card-rating-icon" src="assets/icons/star.svg" alt="Оценить">
+                                <p class="premium__card-rating-quality">5.0 <span class="premium__card-rating-quantity">(55)</span></p>
+                            </div>
+                            <a href="/" class="premium__card-signup link-card">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="premium__card content-card">
+                        <div class="premium__card-head flex-row">
+                            <img class="premium__card-logo" src="assets/img/premium/logo.png" alt="Логотип Burut">
+                            <div class="premium__card-container flex-row">
+                                <div class="premium__card-text flex-column">
+                                    <h3 class="premium__card-headline">Burut Barbershop</h3>
+                                    <div class="premium__card-address flex-row">
+                                        <img class="premium__card-address-icon" src="assets/icons/pin.svg" alt="">
+                                        <p class="premium__card-address-text">Садриддина Айни 21/17</p>
+                                    </div>
+                                </div>
+                                <img class="premium__card-favourite" src="assets/icons/heart.svg" alt="Понравившееся">
+                            </div>
+                        </div>
+                        <div class="premium__card-foot flex-row">
+                            <div class="premium__card-rating flex-row">
+                                <img class="premium__card-rating-icon" src="assets/icons/star.svg" alt="Оценить">
+                                <p class="premium__card-rating-quality">5.0 <span class="premium__card-rating-quantity">(55)</span></p>
+                            </div>
+                            <a href="/" class="premium__card-signup link-card">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="premium__card content-card">
+                        <div class="premium__card-head flex-row">
+                            <img class="premium__card-logo" src="assets/img/premium/logo.png" alt="Логотип Burut">
+                            <div class="premium__card-container flex-row">
+                                <div class="premium__card-text flex-column">
+                                    <h3 class="premium__card-headline">Burut Barbershop</h3>
+                                    <div class="premium__card-address flex-row">
+                                        <img class="premium__card-address-icon" src="assets/icons/pin.svg" alt="">
+                                        <p class="premium__card-address-text">Садриддина Айни 21/17</p>
+                                    </div>
+                                </div>
+                                <img class="premium__card-favourite" src="assets/icons/heart.svg" alt="Понравившееся">
+                            </div>
+                        </div>
+                        <div class="premium__card-foot flex-row">
+                            <div class="premium__card-rating flex-row">
+                                <img class="premium__card-rating-icon" src="assets/icons/star.svg" alt="Оценить">
+                                <p class="premium__card-rating-quality">5.0 <span class="premium__card-rating-quantity">(55)</span></p>
+                            </div>
+                            <a href="/" class="premium__card-signup link-card">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="premium__card content-card">
+                        <div class="premium__card-head flex-column">
+                            <img class="premium__card-logo premium__card-logo--epil" src="assets/img/premium/epil_tj.png" alt="Epil_tj">
+                            <div class="premium__card-container premium__card-container--epil flex-row">
+                                <div class="premium__card-text premium__card-text--epil flex-column">
+                                    <h3 class="premium__card-headline">Epil_tj</h3>
+                                    <div class="premium__card-address flex-row">
+                                        <img class="premium__card-address-icon" src="assets/icons/pin.svg" alt="">
+                                        <p class="premium__card-address-text">Садриддина Айни 21/17</p>
+                                    </div>
+                                </div>
+                                <img class="premium__card-favourite" src="assets/icons/heart.svg" alt="Понравившееся">
+                            </div>
+                        </div>
+                        <div class="premium__card-foot flex-row">
+                            <div class="premium__card-rating flex-row">
+                                <img class="premium__card-rating-icon" src="assets/icons/star.svg" alt="Оценить">
+                                <p class="premium__card-rating-quality">5.0 <span class="premium__card-rating-quantity">(55)</span></p>
+                            </div>
+                            <a href="/" class="premium__card-signup link-card">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="premium__button block-margin">
+                    <button class="premium__button-box btn-transparent"> Посмотреть ещё 63</button>
+                </div>
+            </div>
+        </section>
+        <section class="discounts container">
+            <h2 class="discounts__headline text-upper">Акции</h2>
+            <div class="discounts__content grid-original block-margin">
+                <div class="discounts__card flex-column content-card">
+                    <div class="discounts__card-head flex-column">
+                        <p class="discounts__card-head-discount">50%</p>
+                        <div class="discounts__card-head-info flex-row">
+                            <p class="discounts__card-head-date">До 15 августа</p>
+                            <div class="discounts__card-head-views flex-row">
+                                <img src="assets/icons/eye.svg" alt="Просмотры" class="discounts__card-head-eye">
+                                <p class="discounts__card-head-counts">33</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discounts__card-description">
+                        <p class="discounts__card-service">Пробный сеанс LPG массаж тела+индивидуальная консультация</p>
+                        <div class="discounts__card-company flex-row">
+                            <img src="assets/img/discounts/logo.png" alt="Логотип Burut" class="discounts__card-company-logo">
+                            <div class="discounts__card-company-main flex-column">
+                                <h3 class="discounts__card-company-name">Burut Barbershop</h3>
+                                <div class="discounts__card-location flex-row">
+                                    <img src="assets/icons/pin.svg" alt="Локация" class="discounts__card-location-pin">
+                                    <p class="discounts__card-location-address">Садриддина Айни 21/17</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="discounts__card flex-column content-card">
+                    <div class="discounts__card-head flex-column">
+                        <p class="discounts__card-head-discount">50%</p>
+                        <div class="discounts__card-head-info flex-row">
+                            <p class="discounts__card-head-date">До 15 августа</p>
+                            <div class="discounts__card-head-views flex-row">
+                                <img src="assets/icons/eye.svg" alt="Просмотры" class="discounts__card-head-eye">
+                                <p class="discounts__card-head-counts">33</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discounts__card-description">
+                        <p class="discounts__card-service">Пробный сеанс LPG массаж тела+индивидуальная консультация</p>
+                        <div class="discounts__card-company flex-row">
+                            <img src="assets/img/discounts/logo.png" alt="Логотип Burut" class="discounts__card-company-logo">
+                            <div class="discounts__card-company-main flex-column">
+                                <h3 class="discounts__card-company-name">Burut Barbershop</h3>
+                                <div class="discounts__card-location flex-row">
+                                    <img src="assets/icons/pin.svg" alt="Локация" class="discounts__card-location-pin">
+                                    <p class="discounts__card-location-address">Садриддина Айни 21/17</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="discounts__card flex-column content-card">
+                    <div class="discounts__card-head flex-column">
+                        <p class="discounts__card-head-discount">50%</p>
+                        <div class="discounts__card-head-info flex-row">
+                            <p class="discounts__card-head-date">До 15 августа</p>
+                            <div class="discounts__card-head-views flex-row">
+                                <img src="assets/icons/eye.svg" alt="Просмотры" class="discounts__card-head-eye">
+                                <p class="discounts__card-head-counts">33</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discounts__card-description">
+                        <p class="discounts__card-service">Пробный сеанс LPG массаж тела+индивидуальная консультация</p>
+                        <div class="discounts__card-company flex-row">
+                            <img src="assets/img/discounts/logo.png" alt="Логотип Burut" class="discounts__card-company-logo">
+                            <div class="discounts__card-company-main flex-column">
+                                <h3 class="discounts__card-company-name">Burut Barbershop</h3>
+                                <div class="discounts__card-location flex-row">
+                                    <img src="assets/icons/pin.svg" alt="Локация" class="discounts__card-location-pin">
+                                    <p class="discounts__card-location-address">Садриддина Айни 21/17</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="discounts__card flex-column content-card">
+                    <div class="discounts__card-head flex-column">
+                        <p class="discounts__card-head-discount">50%</p>
+                        <div class="discounts__card-head-info flex-row">
+                            <p class="discounts__card-head-date">До 15 августа</p>
+                            <div class="discounts__card-head-views flex-row">
+                                <img src="assets/icons/eye.svg" alt="Просмотры" class="discounts__card-head-eye">
+                                <p class="discounts__card-head-counts">33</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discounts__card-description">
+                        <p class="discounts__card-service">Пробный сеанс LPG массаж тела+индивидуальная консультация</p>
+                        <div class="discounts__card-company flex-row">
+                            <img src="assets/img/discounts/logo.png" alt="Логотип Burut" class="discounts__card-company-logo">
+                            <div class="discounts__card-company-main flex-column">
+                                <h3 class="discounts__card-company-name">Burut Barbershop</h3>
+                                <div class="discounts__card-location flex-row">
+                                    <img src="assets/icons/pin.svg" alt="Локация" class="discounts__card-location-pin">
+                                    <p class="discounts__card-location-address">Садриддина Айни 21/17</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="discounts__card flex-column content-card">
+                    <div class="discounts__card-head flex-column">
+                        <p class="discounts__card-head-discount">50%</p>
+                        <div class="discounts__card-head-info flex-row">
+                            <p class="discounts__card-head-date">До 15 августа</p>
+                            <div class="discounts__card-head-views flex-row">
+                                <img src="assets/icons/eye.svg" alt="Просмотры" class="discounts__card-head-eye">
+                                <p class="discounts__card-head-counts">33</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discounts__card-description">
+                        <p class="discounts__card-service">Пробный сеанс LPG массаж тела+индивидуальная консультация</p>
+                        <div class="discounts__card-company flex-row">
+                            <img src="assets/img/discounts/logo.png" alt="Логотип Burut" class="discounts__card-company-logo">
+                            <div class="discounts__card-company-main flex-column">
+                                <h3 class="discounts__card-company-name">Burut Barbershop</h3>
+                                <div class="discounts__card-location flex-row">
+                                    <img src="assets/icons/pin.svg" alt="Локация" class="discounts__card-location-pin">
+                                    <p class="discounts__card-location-address">Садриддина Айни 21/17</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="discounts__card flex-column content-card">
+                    <div class="discounts__card-head flex-column">
+                        <p class="discounts__card-head-discount">50%</p>
+                        <div class="discounts__card-head-info flex-row">
+                            <p class="discounts__card-head-date">До 15 августа</p>
+                            <div class="discounts__card-head-views flex-row">
+                                <img src="assets/icons/eye.svg" alt="Просмотры" class="discounts__card-head-eye">
+                                <p class="discounts__card-head-counts">33</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discounts__card-description">
+                        <p class="discounts__card-service">Пробный сеанс LPG массаж тела+индивидуальная консультация</p>
+                        <div class="discounts__card-company flex-row">
+                            <img src="assets/img/discounts/logo.png" alt="Логотип Burut" class="discounts__card-company-logo">
+                            <div class="discounts__card-company-main flex-column">
+                                <h3 class="discounts__card-company-name">Burut Barbershop</h3>
+                                <div class="discounts__card-location flex-row">
+                                    <img src="assets/icons/pin.svg" alt="Локация" class="discounts__card-location-pin">
+                                    <p class="discounts__card-location-address">Садриддина Айни 21/17</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="discounts__button block-margin">
+                <button class="discounts__button-box btn-transparent">Посмотреть ещё 63</button>
+            </div>
+        </section>
+        <section class="popular container">
+            <div class="popular__head flex-row">
+                <h2 class="popular__headline text-upper">Популярные</h2>
+                <div class="popular__head-buttons">
+                    <button class="popular__head-btn btn-scroll-left"></button>
+                    <button class="popular__head-btn btn-scroll-right"></button>
+                </div>
+            </div>
+            <div class="popular__content block-margin">
+                <div class="popular__card">
+                    <img src="assets/img/popular/burut_logo.png" alt="Burut Barbershop" class="popular__card-img">
+                    <div class="popular__card-container flex-column">
+                        <h3 class="popular__card-company">Burut Barbershop</h3>
+                        <p class="popular__card-address">Садриддина Айни 21/17</p>
+                        <p class="popular__card-time">Пн-Сб (09:00-20:00)</p>
+                        <button class="btn-orange popular__card-button">Записаться</button>
+                    </div>
+                </div>
+                <div class="popular__card">
+                    <img src="assets/img/popular/epil_logo.png" alt="Epil_tj" class="popular__card-img">
+                    <div class="popular__card-container flex-column">
+                        <h3 class="popular__card-company">Epil_tj</h3>
+                        <p class="popular__card-address">Садриддина Айни 21/17</p>
+                        <p class="popular__card-time">Пн-Сб (09:00-20:00)</p>
+                        <button class="btn-orange popular__card-button">Записаться</button>
+                    </div>
+                </div>
+                <div class="popular__card">
+                    <img src="assets/img/popular/mahmudi_logo.png" alt="Mahmudi Farishta" class="popular__card-img">
+                    <div class="popular__card-container flex-column">
+                        <h3 class="popular__card-company">Mahmudi Farishta</h3>
+                        <p class="popular__card-address">Садриддина Айни 21/17</p>
+                        <p class="popular__card-time">Пн-Сб (09:00-20:00)</p>
+                        <button class="btn-orange popular__card-button">Записаться</button>
+                    </div>
+                </div>
+                <div class="popular__card">
+                    <img src="assets/img/popular/barber_logo.png" alt="Barber House" class="popular__card-img">
+                    <div class="popular__card-container flex-column">
+                        <h3 class="popular__card-company">Mahmudi Farishta</h3>
+                        <p class="popular__card-address">Садриддина Айни 21/17</p>
+                        <p class="popular__card-time">Пн-Сб (09:00-20:00)</p>
+                        <button class="btn-orange popular__card-button">Записаться</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="catalogue container">
+            <h2 class="catalogue__headline text-upper">Каталог</h2>
+            <div class="catalogue__content grid-original block-margin">
+                <div class="catalogue__card content-card">
+                    <div class="catalogue__card-head flex-row">
+                        <picture class="catalogue__card-picture">
+                            <source class="catalogue__card-source" media="(max-width:999px)" srcset="assets/img/catalogue/logo_bigger.png">
+                            <img class="catalogue__card-logo" src="assets/img/catalogue/logo.png" alt="Логотип Burut">
+                        </picture>
+                        <div class="catalogue__card-container flex-row">
+                            <div class="catalogue__card-text flex-column">
+                                <h3 class="catalogue__card-headline">Burut Barbershop</h3>
+                                <div class="catalogue__card-address flex-row">
+                                    <img class="catalogue__card-address-icon" src="assets/icons/pin.svg" alt="">
+                                    <p class="catalogue__card-address-text">Садриддина Айни 21/17</p>
+                                </div>
+                            </div>
+                            <img class="catalogue__card-favourite" src="assets/icons/heart.svg" alt="Понравившееся">
+                        </div>
+                    </div>
+                    <div class="catalogue__card-foot flex-row">
+                        <div class="catalogue__card-rating flex-row">
+                            <img class="catalogue__card-rating-icon" src="assets/icons/star.svg" alt="Оценить">
+                            <p class="catalogue__card-rating-quality">5.0 <span class="catalogue__card-rating-quantity">(55)</span></p>
+                        </div>
+                        <a href="/" class="catalogue__card-signup link-card">Записаться</a>
+                    </div>
+                </div>
+                <div class="catalogue__card content-card">
+                    <div class="catalogue__card-head flex-row">
+                       <picture class="catalogue__card-picture">
+                            <source class="catalogue__card-source" media="(max-width:999px)" srcset="assets/img/catalogue/logo_bigger.png">
+                            <img class="catalogue__card-logo" src="assets/img/catalogue/logo.png" alt="Логотип Burut">
+                        </picture>
+                        <div class="catalogue__card-container flex-row">
+                            <div class="catalogue__card-text flex-column">
+                                <h3 class="catalogue__card-headline">Burut Barbershop</h3>
+                                <div class="catalogue__card-address flex-row">
+                                    <img class="catalogue__card-address-icon" src="assets/icons/pin.svg" alt="">
+                                    <p class="catalogue__card-address-text">Садриддина Айни 21/17</p>
+                                </div>
+                            </div>
+                            <img class="catalogue__card-favourite" src="assets/icons/heart.svg" alt="Понравившееся">
+                        </div>
+                    </div>
+                    <div class="catalogue__card-foot flex-row">
+                        <div class="catalogue__card-rating flex-row">
+                            <img class="catalogue__card-rating-icon" src="assets/icons/star.svg" alt="Оценить">
+                            <p class="catalogue__card-rating-quality">5.0 <span class="catalogue__card-rating-quantity">(55)</span></p>
+                        </div>
+                        <a href="/" class="catalogue__card-signup link-card">Записаться</a>
+                    </div>
+                </div>
+                <div class="catalogue__card content-card">
+                    <div class="catalogue__card-head flex-row">
+                        <picture class="catalogue__card-picture">
+                            <source class="catalogue__card-source" media="(max-width:999px)" srcset="assets/img/catalogue/logo_bigger.png">
+                            <img class="catalogue__card-logo" src="assets/img/catalogue/logo.png" alt="Логотип Burut">
+                        </picture>
+                        <div class="catalogue__card-container flex-row">
+                            <div class="catalogue__card-text flex-column">
+                                <h3 class="catalogue__card-headline">Burut Barbershop</h3>
+                                <div class="catalogue__card-address flex-row">
+                                    <img class="catalogue__card-address-icon" src="assets/icons/pin.svg" alt="">
+                                    <p class="catalogue__card-address-text">Садриддина Айни 21/17</p>
+                                </div>
+                            </div>
+                            <img class="catalogue__card-favourite" src="assets/icons/heart.svg" alt="Понравившееся">
+                        </div>
+                    </div>
+                    <div class="catalogue__card-foot flex-row">
+                        <div class="catalogue__card-rating flex-row">
+                            <img class="catalogue__card-rating-icon" src="assets/icons/star.svg" alt="Оценить">
+                            <p class="catalogue__card-rating-quality">5.0 <span class="catalogue__card-rating-quantity">(55)</span></p>
+                        </div>
+                        <a href="/" class="catalogue__card-signup link-card">Записаться</a>
+                    </div>
+                </div>
+                <div class="catalogue__card content-card">
+                    <div class="catalogue__card-head flex-row">
+                        <picture class="catalogue__card-picture">
+                            <source class="catalogue__card-source" media="(max-width:999px)" srcset="assets/img/catalogue/logo_bigger.png">
+                            <img class="catalogue__card-logo" src="assets/img/catalogue/logo.png" alt="Логотип Burut">
+                        </picture>
+                        <div class="catalogue__card-container flex-row">
+                            <div class="catalogue__card-text flex-column">
+                                <h3 class="catalogue__card-headline">Burut Barbershop</h3>
+                                <div class="catalogue__card-address flex-row">
+                                    <img class="catalogue__card-address-icon" src="assets/icons/pin.svg" alt="">
+                                    <p class="catalogue__card-address-text">Садриддина Айни 21/17</p>
+                                </div>
+                            </div>
+                            <img class="catalogue__card-favourite" src="assets/icons/heart.svg" alt="Понравившееся">
+                        </div>
+                    </div>
+                    <div class="catalogue__card-foot flex-row">
+                        <div class="catalogue__card-rating flex-row">
+                            <img class="catalogue__card-rating-icon" src="assets/icons/star.svg" alt="Оценить">
+                            <p class="catalogue__card-rating-quality">5.0 <span class="catalogue__card-rating-quantity">(55)</span></p>
+                        </div>
+                        <a href="/" class="catalogue__card-signup link-card">Записаться</a>
+                    </div>
+                </div>
+                <div class="catalogue__card content-card">
+                    <div class="catalogue__card-head flex-row">
+                        <picture class="catalogue__card-picture">
+                            <source class="catalogue__card-source" media="(max-width:999px)" srcset="assets/img/catalogue/logo_bigger.png">
+                            <img class="catalogue__card-logo" src="assets/img/catalogue/logo.png" alt="Логотип Burut">
+                        </picture>
+                        <div class="catalogue__card-container flex-row">
+                            <div class="catalogue__card-text flex-column">
+                                <h3 class="catalogue__card-headline">Burut Barbershop</h3>
+                                <div class="catalogue__card-address flex-row">
+                                    <img class="catalogue__card-address-icon" src="assets/icons/pin.svg" alt="">
+                                    <p class="catalogue__card-address-text">Садриддина Айни 21/17</p>
+                                </div>
+                            </div>
+                            <img class="catalogue__card-favourite" src="assets/icons/heart.svg" alt="Понравившееся">
+                        </div>
+                    </div>
+                    <div class="catalogue__card-foot flex-row">
+                        <div class="catalogue__card-rating flex-row">
+                            <img class="catalogue__card-rating-icon" src="assets/icons/star.svg" alt="Оценить">
+                            <p class="catalogue__card-rating-quality">5.0 <span class="catalogue__card-rating-quantity">(55)</span></p>
+                        </div>
+                        <a href="/" class="catalogue__card-signup link-card">Записаться</a>
+                    </div>
+                </div>
+                <div class="catalogue__card content-card">
+                    <div class="catalogue__card-head flex-row">
+                        <picture class="catalogue__card-picture">
+                            <source class="catalogue__card-source" media="(max-width:999px)" srcset="assets/img/catalogue/logo_bigger.png">
+                            <img class="catalogue__card-logo" src="assets/img/catalogue/logo.png" alt="Логотип Burut">
+                        </picture>
+                        <div class="catalogue__card-container flex-row">
+                            <div class="catalogue__card-text flex-column">
+                                <h3 class="catalogue__card-headline">Burut Barbershop</h3>
+                                <div class="catalogue__card-address flex-row">
+                                    <img class="catalogue__card-address-icon" src="assets/icons/pin.svg" alt="">
+                                    <p class="catalogue__card-address-text">Садриддина Айни 21/17</p>
+                                </div>
+                            </div>
+                            <img class="catalogue__card-favourite" src="assets/icons/heart.svg" alt="Понравившееся">
+                        </div>
+                    </div>
+                    <div class="catalogue__card-foot flex-row">
+                        <div class="catalogue__card-rating flex-row">
+                            <img class="catalogue__card-rating-icon" src="assets/icons/star.svg" alt="Оценить">
+                            <p class="catalogue__card-rating-quality">5.0 <span class="catalogue__card-rating-quantity">(55)</span></p>
+                        </div>
+                        <a href="/" class="catalogue__card-signup link-card">Записаться</a>
+                    </div>
+                </div>
+            </div>
+            <div class="catalogue__button block-margin">
+                    <button class="catalogue__button-box btn-transparent"> Посмотреть ещё 63</button>
+            </div>
+        </section>
+        <section class="banner container">
+            <div class="banner__container flex-row">
+                <div class="banner__main flex-column">
+                    <p class="banner__main-head text-upper">Разместите свои услуги в каталоге Moon</p>
+                    <p class="banner__main-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                    </p>
+                    <a href="/" class="banner__main-link btn-orange">Узнать подробнее</a>
+                </div>
+                <img class="banner__img" src="assets/img/banners/catalogue.png" alt="Каталог Moon">
+            </div>
+        </section>
+        <section class="reviews container">
+            <h2 class="reviews__headline text-upper">Отзывы наших клиентов</h2>
+            <div class="reviews__container flex-row block-margin">
+                <div class="reviews__card flex-column">
+                    <p class="reviews__text">
+                        По совету подруги записалась в салон через Moon. 
+                        Выбрала время, записалась к любимому мастеру. Могу посмотреть во сколько мой визит и, если что, перенести его.
+                    </p>
+                    <div class="reviews__person flex-row">
+                        <img class="reviews__person-img" src="assets/img/reviews/person_1.png" alt="Дмитрий">
+                        <div class="reviews__person-details flex-column">
+                            <p class="reviews__person-details-name">Дмитрий Никольский</p>
+                            <p class="reviews__person-details-role">Директор</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__card flex-column">
+                    <p class="reviews__text">
+                        По совету подруги записалась в салон через Moon. 
+                        Выбрала время, записалась к любимому мастеру. Могу посмотреть во сколько мой визит и, если что, перенести его.
+                    </p>
+                    <div class="reviews__person flex-row">
+                        <img class="reviews__person-img" src="assets/img/reviews/person_2.png" alt="Марина">
+                        <div class="reviews__person-details flex-column">
+                            <p class="reviews__person-details-name">Марина Степанова</p>
+                            <p class="reviews__person-details-role">Директор</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__card flex-column">
+                    <p class="reviews__text">
+                        По совету подруги записалась в салон через Moon. 
+                        Выбрала время, записалась к любимому мастеру. Могу посмотреть во сколько мой визит и, если что, перенести его.
+                    </p>
+                    <div class="reviews__person flex-row">
+                        <img class="reviews__person-img" src="assets/img/reviews/person_3.png" alt="Николай">
+                        <div class="reviews__person-details flex-column">
+                            <p class="reviews__person-details-name">Николай Шишов</p>
+                            <p class="reviews__person-details-role">Директор</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="reviews__more">Посмотреть отзывы на <a href="/" class="reviews__more-link">Google Play</a> и <a href="/" class="reviews__more-link">AppStore</a></p>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__container container">
+            <div class="footer__main flex-row">
+                <div class="footer__introduction">
+                    <img class="footer__introduction-logo" src="assets/icons/logo-orange.svg" alt="Логотип Moon">
+                    <p class="footer__introduction-text">Бесплатное приложение для онлайн записи</p>
+                    <button class="footer__introduction-button btn-orange">Создать профиль</button>
+                </div>
+                <div class="footer__info">
+                    <p class="footer__info-head">Информация</p>
+                    <div class="footer__info-menu flex-row">
+                        <nav class="footer__info-fnav">
+                            <ul class="footer__info-flist">
+                                <li class="footer__info-fitem"><a class="footer__info-flink" href="/">О компании</a></li>
+                                <li class="footer__info-fitem"><a class="footer__info-flink" href="/">Обратная связь</a></li>
+                                <li class="footer__info-fitem"><a class="footer__info-flink" href="/">Работа у нас</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="footer__info-snav">
+                            <ul class="footer__info-slist">
+                                <li class="footer__info-sitem"><a class="footer__info-slink" href="/">Партнерская программа</a></li>
+                                <li class="footer__info-sitem"><a class="footer__info-slink" href="/">Политика конфиденциальности</a></li>
+                                <li class="footer__info-sitem"><a class="footer__info-slink" href="/">Пользовательское соглашение</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__professionals">
+                    <p class="footer__professionals-head">Профессионалам</p>
+                    <nav class="footer__professionals-nav">
+                        <ul class="footer__professionals-list">
+                            <li class="footer__professionals-item"><a class="footer__professionals-link" href="/">О сервисе</a></li>
+                            <li class="footer__professionals-item"><a class="footer__professionals-link" href="/">Требование к информации</a></li>
+                            <li class="footer__professionals-item"><a class="footer__professionals-link" href="/">База знаний</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <article class="footer__bottom block-margin flex-row">
+                <p class="footer__bottom-rights">&copy;Moon 2023. All rights reserved. <a class="footer__bottom-link" href="/">Политика безопасности</a></p>
+                <ul class="footer_bottom-list flex-row">
+                    <li class="footer__bottom-item">
+                        <a class="footer__bottom-socialnet" href="/">
+                            <img class="footer__bottom-socialnet-icon" src="assets/icons/instagram.svg" alt="Instagram">
+                        </a>
+                    </li>
+                    <li class="footer__bottom-item">
+                        <a class="footer__bottom-socialnet" href="/">
+                            <img class="footer__bottom-socialnet-icon" src="assets/icons/whatsapp.svg" alt="WhatsApp">
+                        </a>
+                    </li>
+                    <li class="footer__bottom-item">
+                        <a class="footer__bottom-socialnet" href="/">
+                            <img class="footer__bottom-socialnet-icon" src="assets/icons/telegram.svg" alt="Telegram">
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </footer>
+</body>
+</html>

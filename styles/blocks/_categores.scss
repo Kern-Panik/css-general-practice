@@ -1,0 +1,16 @@
+.categories {
+    &__head {
+        justify-content: space-between;
+        &-buttons {
+            display: flex;
+            column-gap: 16px;
+        }
+    }
+    &__cards {
+        justify-content: center;
+        gap: 20px;
+        &-img {
+            width: 100%;
+        }
+    }
+}

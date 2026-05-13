@@ -1,0 +1,240 @@
+@media (max-width: 999px) {
+    :root {
+        --container-margin-y: 60px;
+        --container-padding-x: 40px;
+        --card-block-margin: 20px;
+        --text-shrink: 2.8vw;
+    }
+    
+    h2 {
+        font-size: min(5vw, 40px);
+    }
+
+    .grid-original {
+        grid-template: repeat(3, 1fr) / 1fr 1fr;
+    }
+
+    .booking {
+        &__head {
+           flex-direction: column;
+           align-items: center;
+           gap: 20px;
+           &-line {
+                font-size: min(4vw, 40px);
+           }
+        }
+        &__search {
+            width: 100%;
+            &-field {
+                width: 330px;
+            }
+        }
+        &__categories {
+            margin-top: 80px;
+        }
+        &__choice {
+            flex-direction: column;
+            gap: 20px;
+            &-line {
+                margin-right: 0;
+                text-align: center;
+            }
+        }
+    }
+
+    .premium {
+        &__container {
+            padding: 45px 20px;
+        }
+        &__content {
+            grid-template: repeat(8, auto) / 1fr;
+        }
+        &__card {
+            &:last-of-type {
+                grid-area: 8 / 1;
+            }
+            &-logo {
+                width: min(100%, 88px);
+                height: min(100%, 80px);
+                &--epil {
+                    width: min(100%, 360px);
+                    height: min(100%, 191px);
+                }
+            }   
+        }
+    }
+
+    .popular {
+        &__content {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+
+    .catalogue {
+        &__card {
+            &-head {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            &-logo {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .banner {
+        &__container {
+            flex-direction: column;
+            row-gap: 20px;
+            height: 100%;
+        }
+        &__main {
+            &-head {
+                font-size: min(6vw, 40px);
+            }
+            &-link {
+                width: 100%;
+            }
+        }
+        &__img {
+            max-width: 100%;
+            height: 100%;
+        }
+    }
+
+    .reviews {
+        &__container {
+            flex-direction: column;
+        }
+        &__card {
+            width: 100%;
+        }
+    }
+
+    .footer {
+        &__main {
+            width: 100%;
+            flex-direction: column;
+        }
+        &__info {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 810px) {
+    .header {
+        &__auth {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    :root {
+        --text-shrink: 5vw;
+    }
+
+    h2 {
+        font-size: min(7vw, 40px);
+    }
+
+    .container {
+        padding: 30px 20px;
+    }
+
+    .btn-scroll-left, .btn-scroll-right {
+        display: none;
+    }
+
+    .grid-original {
+        display: grid;
+        grid-template: repeat(6, 1fr) / 1fr;
+        gap: 20px;
+    }
+
+    .booking {
+        &__head {
+            &-line {
+                display: block;
+                text-align: center;
+                font-size: 25px;
+                order: 1;
+            }
+        }
+        &__search {
+            width: 200px;
+            padding: 12px 14px;
+            border: 2px solid #e8e8e8;
+            &-icon {
+                width: 10%;
+                padding: 0;
+            }
+            &-field {
+                width: 130px;
+            }
+        }
+        &__categories {
+            margin-top: 120px;
+        }
+    }
+    
+    .categories {
+        &__head {
+            align-items: center;
+        }
+        &__cards {
+            flex-direction: column;   
+            align-items: center;
+            margin: 20px auto 0;
+            width: 80%;
+            height: 80%;
+        }
+    }
+
+    .discounts {
+        &__card {
+            &-head {
+                width: 100%;
+                background-position-y: bottom;
+            }
+        }
+    }
+
+    .banner {
+        padding: 0;
+        &__container {
+            padding: 30px 30px;
+            border-radius: 0;
+        }
+    }
+
+}
+
+@media (max-width: 428px) {
+    .header {
+        &__info {
+            display: none;
+        }
+    }
+
+    .popular {
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .footer {
+        &__bottom {
+            flex-direction: column;
+            row-gap: 20px;
+            &-rights {
+                order: 1;
+            }
+        }
+    }
+}

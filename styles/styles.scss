@@ -1,0 +1,19 @@
+@import 'variables',
+        'mixins',
+        'fonts', 
+        'reset', 
+        'globals', 
+        'utils';
+
+@import '../styles/blocks/header',
+        '../styles/blocks/booking',
+        '../styles/blocks/categores',
+        '../styles/blocks/premium',
+        '../styles/blocks/discounts',
+        '../styles/blocks/popular',
+        '../styles/blocks/catalogue',
+        '../styles/blocks/banner',
+        '../styles/blocks/reviews',
+        '../styles/blocks/footer';
+
+@import 'media';

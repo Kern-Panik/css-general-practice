@@ -1,0 +1,37 @@
+.popular {
+    &__head {
+        justify-content: space-between;
+        &-buttons{
+            display: inherit;
+            column-gap: 16px;
+        }
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    &__card {
+        width: min(100%, 289px);
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 4px 10px 0 rgba(106, 99, 118, 0.1);
+        &-img {
+            width: min(100%, 289px);
+        }
+        &-container {
+            padding: 16px;
+            row-gap: 16px;
+            & p {
+                font-weight: 500;
+                font-size: 16px;
+                color: #515674;
+            }
+        }
+        &-button {
+                font-weight: 600;
+                background-color: var(--orange-transparent);
+                color: var(--orange-regular);
+            }
+    }
+}

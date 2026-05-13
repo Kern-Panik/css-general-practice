@@ -1,0 +1,16 @@
+body {
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-base);
+    font-size: var(--font-size-base);
+    color: var(--blue-text);
+    background-color: var(--light-background);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2 {
+    font-size: min(3vw, 40px);
+}

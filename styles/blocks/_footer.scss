@@ -1,0 +1,69 @@
+.footer {
+    background-color: var(--blue-regular);
+    &__container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin-bottom: 0;
+    }
+    &__main {
+        justify-content: space-between;
+        row-gap: 20px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        & p {
+            font-weight: 500;
+            color: #fff;
+        }
+    }
+    &__introduction {
+        width: 289px;
+        &-logo {
+            margin-bottom: 40px;
+        }
+        &-text {
+            margin-bottom: 24px;
+            font-size: 18px;
+        }
+        &-button {
+            width: 257px;
+        }
+    }
+    &__info {
+        margin: 0 60px;
+        width: min(100%, 402px);
+        &-head {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+        &-menu {
+            flex-wrap: wrap;
+            column-gap: 37px;
+            @include footer-block;
+        }
+    }
+    &__professionals {
+        width: min(100%, 289px);
+        &-head {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+        &-nav {
+            @include footer-block;
+        }
+    }
+    &__bottom {
+        justify-content: space-between;
+        &-rights {
+            font-family: var(--font-family-second);
+            font-weight: 500;
+            line-height: 1.5;
+            color: #cdcfd7;
+            & a {
+                text-decoration: underline;
+            }
+        }
+        &-item:not(:last-of-type) {
+            margin-right: 16px;
+        }
+    }
+}

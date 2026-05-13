@@ -1,0 +1,27 @@
+:root {
+    --white-pure: #FFF;
+    --light-background: #FCFCFC;
+    --orange-regular: #FF941A;
+    --orange-accent: #FFAC4D;
+    --orange-transparent: rgba(255, 148, 26, 0.1);
+    --blue-regular: #070E38;
+    --blue-text: #20264C;
+    --blue-accent: #E6E7EB;
+
+    --container-width: calc(1216px + (112px * 2));
+    --card-width: 392px;
+    --container-padding-x: 112px;
+    --container-margin-y: 130px;
+    --card-block-margin: 40px;
+
+    --border-radius-regular: 40px;
+
+    --font-size-base: 16px;
+    --font-weight-base: 600;
+    --font-family-base: 'Gilroy', sans-serif;
+    --font-family-second: "Manrope", sans-serif;
+
+    --text-shrink: 1.5vw;
+
+    --transition-duration: 0.2s;
+}
